@@ -27,7 +27,7 @@ public class Customer {
         if (cart.isEmpty()) throw new RuntimeException("Cart is empty");
 
         double subtotal = cart.calculateSubtotal();
-        double shippingFee = cart.getShippableItems().size() * 10.0; // flat rate
+        double shippingFee = cart.getShippableItems().size() * 10.0; 
         double total = subtotal + shippingFee;
 
         System.out.println("\n🛒 Checkout Details:");
